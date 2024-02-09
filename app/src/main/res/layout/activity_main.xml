@@ -11,33 +11,37 @@
         android:id="@+id/editTextYas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="56dp"
         android:hint="Yaş"
         android:minWidth="100dp"
         android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonKaydet"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="106dp" />
 
     <Button
         android:id="@+id/buttonKaydet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="39dp"
         android:text="Kaydet"
-        app:layout_constraintBottom_toTopOf="@+id/textViewSonuc"
-        app:layout_constraintStart_toStartOf="@+id/editTextYas" />
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="301dp" />
 
     <TextView
         android:id="@+id/textViewSonuc"
-        android:layout_width="0dp"
+        android:layout_width="411dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="320dp"
         android:text="Sonuç"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="380dp" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Maaş"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="185dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
